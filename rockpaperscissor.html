@@ -1,0 +1,57 @@
+<!-- rock paper scissor program -->
+<!-- goal is to use accomplish this using asynchronous code -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Rock Paper Scissor</title>
+     <style>
+          body {
+               padding-top: 250px;
+          }
+
+          .btns {
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               gap: 20px;
+          }
+
+          button:hover {
+               cursor: pointer;
+          }
+
+          p,
+          h3 {
+               display: block;
+               text-align: center;
+          }
+     </style>
+</head>
+
+<body>
+     <h3>Rock Paper Scissor Game!</h3>
+
+     <div class="btns">
+          <button id="1" onclick="rps(this)">Rock</button>
+          <button id="2" onclick="rps(this)">Paper</button>
+          <button id="3" onclick="rps(this)">Scissor</button>
+     </div>
+
+     <p>
+          Choose your option!
+     </p>
+
+     <p id="result" style="font-style: italic; font-size: 18px;">
+          ---Result is displayed here---
+     </p>
+
+     <script src="rockpaperscissor.js"></script>
+
+</body>
+
+</html>
